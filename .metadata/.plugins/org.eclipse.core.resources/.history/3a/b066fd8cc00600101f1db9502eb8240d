@@ -1,0 +1,25 @@
+package br.edu.fatecpg.atividadepratica06.view;
+
+import br.edu.fatecpg.atividadepratica06.model.Fila;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Fila fila = new Fila(10);
+		
+		fila.receberPaciente(2);
+		fila.atenderPaciente(2);
+		fila.atenderPaciente(2);
+		fila.atenderPaciente(2);
+		fila.atenderPaciente(1);
+		fila.atenderPaciente(1);
+		fila.atenderPaciente(2);
+		fila.atenderPaciente(1);
+		fila.atenderPaciente(0);
+		
+		System.out.println("Número de Pacientes na fila: " + fila.getNumPacientes());
+
+	}
+
+}
